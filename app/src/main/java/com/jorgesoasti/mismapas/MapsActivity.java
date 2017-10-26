@@ -69,7 +69,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
         posicion = new LatLng(latitud, longitud); //Galapagos
         mMap.setMyLocationEnabled(true);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posicion, 10));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(posicion, 15));
 
         mMap.addMarker(new MarkerOptions()
                 .title(lugar)
